@@ -40,7 +40,6 @@ int get_menu_choise(string menu, int level = 0)
 void sub_sub_menu_1_1()
 {
     int c = -1;
-    char anykey;
     while (c!=0)
     {
         wait_or_clear(0, 1);
@@ -50,13 +49,11 @@ void sub_sub_menu_1_1()
         {
         case 1:
             printline("Do it here 1");
-            printline("Press Any key to continue ...");
-            cin>>anykey;
+            system("pause");
             break;
         case 2:
             printline("Do it here 2");
-            printline("Press Any key to continue ...");
-            cin>>anykey;
+            system("pause");
         case 0:
             return;
         default:
@@ -69,7 +66,6 @@ void sub_sub_menu_1_1()
 void sub_menu_1()
 {
     int c = -1;
-    char anykey;
     while (c!=0)
     {
         wait_or_clear(0, 1);
@@ -88,8 +84,7 @@ void sub_menu_1()
             break;
         case 4:
             printline("Do it here 4");
-            printline("Press Any key to continue ...");
-            cin>>anykey;
+            system("pause");
             break;
         case 0:
             return;
@@ -106,7 +101,6 @@ int main()
     printline("Start Application ....");
     wait_or_clear(1,1);
     int c = -1;
-    char anykey;
     while (c!=0)
     {
         wait_or_clear(0,1);
@@ -122,8 +116,7 @@ int main()
             break;
         case 3:
             printline("Do it here 4");
-            printline("Press Any key to continue ...");
-            cin>>anykey;
+            system("pause");
             break;
         case 0:
             printline("\n\n\a\t\t\tGoodbye :) ......\n\n\n\n\n\n");
